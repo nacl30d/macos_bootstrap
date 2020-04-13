@@ -1,0 +1,7 @@
+- hosts: local
+  connection: local
+
+  roles:
+    - install_packages_via_brew
+    - install_packages_via_mas
+    - configure_system

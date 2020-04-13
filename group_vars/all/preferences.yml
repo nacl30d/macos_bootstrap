@@ -1,0 +1,163 @@
+preferences:
+  ## Global settings
+  - domain: "NSGlobalDomain"
+    configures:
+    - key: AppleLanguages
+      type: array
+      value:
+        - en-JP
+        - ja-JP
+    - key: AppleShowScrollBars
+      type: string
+      value: WhenScrolling
+    - key: AppleShowAllExtensions
+      type: bool
+      value: true
+    - key: com.apple.trackpad.forceClick
+      type: bool
+      value: false
+    - key: com.apple.trackpad.scaling
+      type: int
+      value: 2
+      
+  - domain: "com.apple.AppleMultitouchTrackpad"
+    configures:
+    - key: Clicking
+      type: bool
+      value: true
+    - key: TrackpadThreeFingerDrag
+      type: bool
+      value: true
+    - key: TrackpadThreeFingerTapGesture
+      type: int
+      value: 2
+    - key: TrackpadRightClick
+      type: bool
+      value: true
+    - key: TrackpadFourFingerHorizSwipeGesture
+      type: int
+      value: 2
+    - key: TrackpadFourFingerPinchGesture
+      type: int
+      value: 2
+
+  - domain: "com.apple.dock"
+    configures:
+    - key: orientation
+      type: string
+      value: left
+    - key: autohide
+      type: bool
+      value: true
+    - key: expose-group-apps
+      type: bool
+      value: true
+    - key: minimize-to-application
+      type: bool
+      value: true
+    - key: titlesize
+      type: int
+      value: 64
+    - key: wvous-bl-corner
+      type: int
+      value: 5 # screen saver
+    - key: wvous-bl-modifire
+      type: int
+      value: 0
+    - key: wvous-br-corner
+      type: int
+      value: 10 # display sleep
+    - key: wvous-br-modifire
+      type: int
+      value: 0
+    - key: wvous-tr-corner
+      type: int
+      value: 10 # display sleep
+    - key: wvous-tr-modifire
+      type: int
+      value: 0
+
+  - domain: "com.apple.finder"
+    configures:
+    - key: ShowExternalHardDrivesOnDesktop
+      type: bool
+      value: true
+    - key: ShowHardDrivesOnDesktop
+      type: bool
+      value: false
+    - key: ShowMountedServerOnDesktop
+      type: bool
+      value: true
+    - key: ShowRemovableMediaOnDesktop
+      type: bool
+      value: true
+    - key: ShowStatusBar
+      type: bool
+      value: true
+    - key: ShowPathbar
+      type: bool
+      value: true
+
+  - domain: "com.apple.screencapture"
+    configures:
+    - key: location
+      type: string
+      value: ~/Dropbox/var/ScreenCapture
+    - key: name
+      type: string
+      value: ""
+
+  - domain: "com.apple.safari"
+    configures:
+    # - key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
+    #   type: bool
+    #   value: true
+    - key: IncludeDevelopMenu
+      type: bool
+      value: true
+    - key: ShowFullURLInSmartSearchField
+      type: bool
+      value: true
+    - key: AutoFillPasswords
+      type: bool
+      value: false
+    - key: AutoOpenSafeDownlods
+      type: bool
+      value: false
+    - key: DownloadsPath
+      type: string
+      value: ~/Dropbox/home/Downloads
+    - key: ExtensionEnabled
+      type: bool
+      value: true
+
+  - domein: "com.apple.desktopservices"
+    configures:
+    - key: DSDontWriteNetworkStorse
+      type: bool
+      value: true
+
+  - domain: "com.apple.menuextra.battery"
+    configures:
+    - key: ShowPercent
+      type: string
+      value: YES
+
+  - domain: "com.apple.menuextra.clock"
+    configures:
+    - key: DateFormat
+      type: string
+      value: MMM D  H:mm
+    - key: FlashDateSeparators
+      type: int
+      value: 0
+    - key: IsAnalog
+      type: int
+      value: 0
+
+  - domain: "com.apple.Siri"
+    configures:
+    - key: StatusMenuVisible
+      type: bool
+      value: false
+      

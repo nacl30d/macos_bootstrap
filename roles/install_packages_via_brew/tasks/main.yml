@@ -1,0 +1,59 @@
+- name: Be sure brew is installed
+  block:
+  - name: Check whether brew is installed
+    command: type brew
+    register: brew_status
+    failed_when: brew_status.rc not in [0, 1]
+    changed_when: false
+    check_mode: no
+
+  # - name: Be sure brew prerequirements are installed
+  #   block:
+  #     - name: Check whether xcode-select is installed
+  #       command: type xcode-select
+  #       register: xcode_status
+  #       failed_when: xcode_status.rc not in [0, 1 not found]
+  #       changed_when: false
+
+  #     - name: Install xcode-select
+  #       command: xcode-select --install
+  #       when: xcode_status.rc > 0
+
+  - name: Run brew install script
+    command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    when: brew_status.rc > 0
+
+
+- name: Tap repositories
+  block:
+  - name: Tap official repositories
+    homebrew_tap:
+      name: "{{ homebrew.repos.official }}"
+      state: present
+
+  - name: Tap homemade repositories
+    homebrew_tap:
+      name: "{{ item.name }}"
+      url: "{{ item.url }}"
+      state: present
+    loop: "{{ homebrew.repos.homemade }}"
+
+
+- name: homebrew is updated
+  homebrew:
+    update_homebrew: yes
+
+
+- name: Install homebrew packages
+  homebrew:
+    name: "{{ homebrew.packages }}"
+    state: present
+
+
+- name: Install homebrew casks
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    install_options: "appdir=/Applications"
+    accept_external_apps: yes
+  loop: "{{ homebrew.casks }}"  

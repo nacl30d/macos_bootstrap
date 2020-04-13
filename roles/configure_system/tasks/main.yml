@@ -1,0 +1,11 @@
+- name: Be sure osx defaults are configured
+  osx_defaults:
+    domain: "{{ item.0 }}"
+    key: "{{ item.1.key }}"
+    type: "{{ item.1.type }}"
+    value: "{{ item.1.value }}"
+    state: present
+  with_subelements:
+    - "{{ preferences }}"
+    - configures
+      

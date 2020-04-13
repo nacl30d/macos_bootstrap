@@ -1,0 +1,133 @@
+homebrew:
+  repos:
+    official: 'homebrew/core,homebrew/services,homebrew/cask,homebrew/cask-fonts,homebrew/cask-drivers,wess/repo'
+    homemade:
+      - name: 'd-salt/homebrew'
+        url: 'github:d-salt/homebrew-mycasks'
+
+  packages:
+    - cmake
+    - curl
+    - coreutils
+    - emacs
+    - gcc
+    - git
+    - grep
+    - mas
+    - mackup
+    - nmap
+    - gnu-sed
+    - source-highlight
+    - tidy-html5
+    - tmux
+    - tree
+    - wget
+    - zsh
+    - zsh-completions
+    # - sonar-scanner
+    # - hugo
+    # - python
+    # - node
+    # - r
+    # - jq
+    # - htop
+    # - httrack
+    # - poppler
+    # - unar
+    # - figlet
+    # - cmatrix
+    # - sl
+
+  casks:
+    - alfread
+    - clipy
+    - dropbox
+    - docker
+    - firefox
+    - fujitsu-scansnap-manager
+    - google-chrome
+    - google-japanese-ime
+    - iterm2
+    - font-myrica
+    - font-fira-code
+    - visual-studio-code
+    - appcleaner
+    - authy
+    - font-source-han-sans
+    - font-cource-han-serif
+    - macx-youtube-downloader
+    - propresenter
+    - slack
+    - tripmode
+    - vipriser
+    - webex-meetings
+    # - atom
+    # - sublime-text
+    # - postman
+    # - sourcetree
+    # - virtualbox
+    # - remember-the-milk
+    # - gyazo
+    # - deckset
+    # - grammarly
+    # - duet
+    # - zoomus
+    # - tableau
+    # - astah-professional
+    # - gimp
+    # - inkscape
+    # - macx-dvd-ripper-pro
+    # - macx-video-converter-pro
+    # - xquartz
+
+apps:
+  - name: 1Password 7
+    id: "1333542190"
+  - name: CotEditor
+    id: "1024640650"
+  - name: Magnet
+    id: "441258766"
+  - name: The Unarchiver
+    id: "425424353"
+  - name: WinArchiver Lite
+    id: "414855915"
+  - name: Amphetamine
+    id: "937984704"
+  - name: Spark
+    id: "1176895641"
+  - name: LINE
+    id: "539883307"
+  - name: Focus
+    id: "777233759"
+  - name: Total Video Converter Pro
+    id: "426654691"
+  - name: Instapaper
+    id: "1481302432"
+  - name: LadioCast
+    id: "411213048"
+  - name: OneLogin for Safari
+    id: "1475824389"
+  - name: Microsoft PowerPoint
+    id: "462062816"
+  - name: Microsoft Word
+    id: "462054704"
+  - name: Microsoft Excel
+    id: "462058435"
+  - name: Keynote
+    id: "409183694"
+  - name: Pages
+    id: "409201541"
+  - name: Numbers
+    id: "409203825"
+  # - name: Grammarly for Safari
+  #   id: "1462114288"
+  # - name: ToyViewer
+  #   id: "414298354"
+  # - name: Xcode
+  #   id: 497799835
+  # - name: Motion
+  #   id: 434290957
+  # - name: Motion
+  #   id: "434290957"
+  # - name: Logic Pro X
+  #   id: 634148309
