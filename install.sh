@@ -7,12 +7,15 @@ GIT_DIR="${HOME}/.macos_bootstrap"
     if type ansible > /dev/null 2>&1; then
         echo 'You have already install ansible!'
     else
-        if ! type pip > /dev/null 2>&1; then
+        if type pip3 > /dev/null 2>&1; then
+            PIPCMD=pip3
+        elif ! type pip > /dev/null 2>&1; then
             curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
             python get-pip.py --user
+            PIPCMD=pip
         fi
 
-        sudo pip install ansible
+        sudo ${PIPCMD} install ansible
 
         if ! type ansible > /dev/null 2>&1; then
             echo 'Error: Faild to install ansible'
