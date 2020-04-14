@@ -7,15 +7,23 @@ preferences:
       value:
         - en-JP
         - ja-JP
+        - en
+        - ja
+    - key: AppleActionOnDoubleClick
+      type: string
+      value: Minimize
     - key: AppleShowScrollBars
       type: string
       value: WhenScrolling
     - key: AppleShowAllExtensions
       type: bool
-      value: true
+      value: yes
+    - key: com.apple.keyboard.fnState
+      type: bool
+      value: yes
     - key: com.apple.trackpad.forceClick
       type: bool
-      value: false
+      value: no
     - key: com.apple.trackpad.scaling
       type: int
       value: 2
@@ -24,16 +32,16 @@ preferences:
     configures:
     - key: Clicking
       type: bool
-      value: true
+      value: yes
     - key: TrackpadThreeFingerDrag
       type: bool
-      value: true
+      value: yes
     - key: TrackpadThreeFingerTapGesture
       type: int
       value: 2
     - key: TrackpadRightClick
       type: bool
-      value: true
+      value: yes
     - key: TrackpadFourFingerHorizSwipeGesture
       type: int
       value: 2
@@ -45,16 +53,19 @@ preferences:
     configures:
     - key: orientation
       type: string
-      value: left
+      value: "left"
     - key: autohide
       type: bool
-      value: true
+      value: yes
+    - key: mineffect
+      type: string
+      value: "scale"
     - key: expose-group-apps
       type: bool
-      value: true
+      value: yes
     - key: minimize-to-application
       type: bool
-      value: true
+      value: yes
     - key: titlesize
       type: int
       value: 64
@@ -81,83 +92,99 @@ preferences:
     configures:
     - key: ShowExternalHardDrivesOnDesktop
       type: bool
-      value: true
+      value: yes
     - key: ShowHardDrivesOnDesktop
       type: bool
-      value: false
+      value: no
     - key: ShowMountedServerOnDesktop
       type: bool
-      value: true
+      value: yes
     - key: ShowRemovableMediaOnDesktop
       type: bool
-      value: true
+      value: no
     - key: ShowStatusBar
       type: bool
-      value: true
+      value: yes
     - key: ShowPathbar
       type: bool
-      value: true
+      value: yes
 
   - domain: "com.apple.screencapture"
     configures:
     - key: location
       type: string
-      value: ~/Dropbox/var/ScreenCapture
+      value: "~/Dropbox/var/ScreenCapture"
     - key: name
       type: string
       value: ""
 
-  - domain: "com.apple.safari"
+  - domain: "com.apple.Safari.SandboxBroker"
     configures:
-    # - key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
-    #   type: bool
-    #   value: true
-    - key: IncludeDevelopMenu
+    - key: ShowDevelopMenu
       type: bool
-      value: true
-    - key: ShowFullURLInSmartSearchField
-      type: bool
-      value: true
-    - key: AutoFillPasswords
-      type: bool
-      value: false
-    - key: AutoOpenSafeDownlods
-      type: bool
-      value: false
-    - key: DownloadsPath
-      type: string
-      value: ~/Dropbox/home/Downloads
-    - key: ExtensionEnabled
-      type: bool
-      value: true
+      value: yes
 
-  - domein: "com.apple.desktopservices"
-    configures:
-    - key: DSDontWriteNetworkStorse
-      type: bool
-      value: true
+  #@ couldnot find on catalina 
+  # - domain: "com.apple.safari"
+  #   configures:
+  #   - key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
+  #     type: bool
+  #     value: true
+  #   - key: IncludeDevelopMenu
+  #     type: bool
+  #     value: true
+  #   - key: ShowFullURLInSmartSearchField
+  #     type: bool
+  #     value: true
+  #   - key: AutoFillPasswords
+  #     type: bool
+  #     value: false
+  #   - key: AutoOpenSafeDownlods
+  #     type: bool
+  #     value: false
+  #   - key: DownloadsPath
+  #     type: string
+  #     value: ~/Dropbox/home/Downloads
+  #   - key: ExtensionEnabled
+  #     type: bool
+  #     value: true
+  #   - key: StatusMenuVisible
+  #     type: bool
+  #     value: false
 
-  - domain: "com.apple.menuextra.battery"
-    configures:
-    - key: ShowPercent
-      type: string
-      value: YES
+  ## couldnot find on catalina
+  # - domein: "com.apple.desktopservices"
+  #   configures:
+  #   - key: DSDontWriteNetworkStorse
+  #     type: bool
+  #     value: true
+
+  # - domain: "com.apple.menuextra.battery"
+  #   configures:
+  #   - key: ShowPercent
+  #     type: string
+  #     value: YES
 
   - domain: "com.apple.menuextra.clock"
     configures:
     - key: DateFormat
       type: string
-      value: MMM D  H:mm
+      value: "EEE MMM D  H:mm"
     - key: FlashDateSeparators
-      type: int
-      value: 0
-    - key: IsAnalog
-      type: int
-      value: 0
-
-  - domain: "com.apple.Siri"
-    configures:
-    - key: StatusMenuVisible
       type: bool
-      value: false
-      
+      value: no
+    - key: IsAnalog
+      type: bool
+      value: no
+
+  - domain: "com.apple.TextInputMenu"
+    configures:
+    - key: visible
+      type: bool
+      value: yes
+
+  - domain: com.apple.repport
+    configures:
+    - key: familySyncedName
+      type: string
+      value: "SaltBook Pro"
