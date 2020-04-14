@@ -3,7 +3,7 @@ homebrew:
     official: 'homebrew/core,homebrew/services,homebrew/cask,homebrew/cask-fonts,homebrew/cask-drivers,wess/repo'
     homemade:
       - name: 'd-salt/homebrew'
-        url: 'github:d-salt/homebrew-mycasks'
+        url: 'https://github.com/d-salt/homebrew-mycasks'
 
   packages:
     - cmake
@@ -39,7 +39,7 @@ homebrew:
     # - sl
 
   casks:
-    - alfread
+    - alfred
     - clipy
     - dropbox
     - docker
@@ -54,10 +54,11 @@ homebrew:
     - appcleaner
     - authy
     - font-source-han-sans
-    - font-cource-han-serif
+    - font-source-han-serif
     - macx-youtube-downloader
     - propresenter
     - slack
+    - soundflower
     - tripmode
     - vipriser
     - webex-meetings
