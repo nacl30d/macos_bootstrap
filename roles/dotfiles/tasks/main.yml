@@ -1,0 +1,28 @@
+- name: Checkout my dotfiles
+  git:
+    repo: https://github.com/d-salt/dotfiles.git
+    dest: ~/.dotfiles
+
+- name: Get dotfiles
+  find:
+    paths: ~/.dotfiles
+    file_type: any
+    hidden: yes
+    patterns: ".*"
+    recurse: no
+    excludes: '.git,.gitignore,.gitmodule'
+  register: dotfiles
+
+## file module with force cannot replace directory
+- name: Remove emacs.d
+  file:
+    path: ~/.emacs.d
+    state: absent
+
+- name: Create symlinks
+  file:
+    src: "{{ item.path }}"
+    dest: "~/{{ item.path | basename }}"
+    state: link
+    force: yes
+  loop: "{{ dotfiles.files }}"
