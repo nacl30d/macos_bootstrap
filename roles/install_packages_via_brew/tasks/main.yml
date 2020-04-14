@@ -20,7 +20,7 @@
   #       when: xcode_status.rc > 0
 
   - name: Run brew install script
-    command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     when: brew_status.rc > 0
 
 
