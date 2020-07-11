@@ -13,6 +13,7 @@ homebrew:
     - gcc
     - git
     - grep
+    - hugo
     - mas
     - mackup
     - nmap
@@ -25,7 +26,6 @@ homebrew:
     - zsh
     - zsh-completions
     # - sonar-scanner
-    # - hugo
     # - python
     # - node
     # - r
@@ -44,7 +44,7 @@ homebrew:
     - dropbox
     - docker
     - firefox
-    - fujitsu-scansnap-manager
+    - fujitsu-scansnap-home
     - google-chrome
     - google-japanese-ime
     - iterm2
@@ -61,6 +61,7 @@ homebrew:
     - tripmode
     - vipriser
     - webex-meetings
+    - zoomus
     # - atom
     # - sublime-text
     # - postman
@@ -71,7 +72,6 @@ homebrew:
     # - deckset
     # - grammarly
     # - duet
-    # - zoomus
     # - tableau
     # - astah-professional
     # - gimp
@@ -119,15 +119,17 @@ apps:
     id: "409201541"
   - name: Numbers
     id: "409203825"
+  - name: Final Cut Pro X
+    id: "424389933"
+  - name: Motion
+    id: "434290957"
+  - name: Compressor
+    id: "424390742"
+  - name: Logic Pro X
+    id: "634148309"
   # - name: Grammarly for Safari
   #   id: "1462114288"
   # - name: ToyViewer
   #   id: "414298354"
   # - name: Xcode
   #   id: 497799835
-  # - name: Motion
-  #   id: 434290957
-  # - name: Motion
-  #   id: "434290957"
-  # - name: Logic Pro X
-  #   id: 634148309
