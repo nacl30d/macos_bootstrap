@@ -1,0 +1,25 @@
+- name: Be sure pandoc is installed
+  homebrew:
+    name: pandoc
+    state: present
+
+- name: Be sure LaTEX is installed
+  homebrew_cask:
+    name: basictex
+    state: present
+    accept_external_apps: yes
+
+- name: Be sure LaTEX is configured
+  block:
+    - name: Be sure tlmgr is updated
+      command:
+        cmd: tlmgr update --self --all
+
+    - name: Be sure papers is configured
+      command:
+        cmd: tlmgr paper a4
+
+    - name: Be sure packages are installed
+      command:
+        cmd: tlmgr install collection-langjapanese collection-luatex collection-latexextra
+  become: yes
