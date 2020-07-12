@@ -56,4 +56,5 @@
     state: present
     install_options: "appdir=/Applications"
     accept_external_apps: yes
-  loop: "{{ homebrew.casks }}"  
+  loop: "{{ homebrew.casks }}"
+  ignore_errors: yes
