@@ -15,6 +15,8 @@ GIT_DIR="${HOME}/.macos_bootstrap"
             PIPCMD=pip
         fi
 
+        xcode-select --install # looks like it's required xcode-select to run pip
+
         sudo ${PIPCMD} install ansible
 
         if ! type ansible > /dev/null 2>&1; then
