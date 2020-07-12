@@ -24,14 +24,14 @@
     when: brew_status.rc > 0
 
 
-- name: Tap repositories
+- name: Be sure repositories are tapped
   block:
   - name: Tap official repositories
     homebrew_tap:
       name: "{{ homebrew.repos.official }}"
       state: present
 
-  - name: Tap homemade repositories
+  - name: Be sure homemade repositories are tapped
     homebrew_tap:
       name: "{{ item.name }}"
       url: "{{ item.url }}"
@@ -39,21 +39,21 @@
     loop: "{{ homebrew.repos.homemade }}"
 
 
-- name: homebrew is updated
+- name: Be sure homebrew is updated
   homebrew:
     update_homebrew: yes
 
 
-- name: Install homebrew packages
+- name: Be sure homebrew packages are installed
   homebrew:
     name: "{{ homebrew.packages }}"
     state: present
 
 
-- name: Install homebrew casks
+- name: Be sure homebrew casks are installed
   homebrew_cask:
     name: "{{ item }}"
     state: present
     install_options: "appdir=/Applications"
     accept_external_apps: yes
-  loop: "{{ homebrew.casks }}"  
+  loop: "{{ homebrew.casks }}"
