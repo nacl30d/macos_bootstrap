@@ -106,6 +106,8 @@ apps:
     id: "1481302432"
   - name: LadioCast
     id: "411213048"
+  - name: Day One
+    id: "1055511498"
   - name: OneLogin for Safari
     id: "1475824389"
   - name: Microsoft PowerPoint
