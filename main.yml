@@ -2,8 +2,6 @@
   connection: local
 
   roles:
-    - install_packages_via_brew
-    - install_packages_via_mas
+    - install_packages
     - configure_system
     - dotfiles
-    - reboot

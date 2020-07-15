@@ -28,7 +28,12 @@ GIT_DIR="${HOME}/.macos_bootstrap"
 
 : "Download Ansible Playbooks" && {
     if type git > /dev/null 2>&1; then
-        git clone ${GIT_REPO}.git ${GIT_DIR}
+        if -d ${GIT_DIR}; then
+            cd ${GIT_DIR}
+            git pull
+        else
+            git clone ${GIT_REPO}.git ${GIT_DIR}
+        fi
     elif type curl > /dev/null 2>&1; then
         curl -LO ${GIT_REPO}/archive/master.tar.gz
         tar zxvf master.tar.gz ${GIT_DIR}
@@ -40,5 +45,10 @@ GIT_DIR="${HOME}/.macos_bootstrap"
 
 : "Run Ansible Palybook" && {
     cd ${GIT_DIR}
-    ansible-playbook main.yml -i inventory/hosts    
+    if [ "$1" = "" ]; then
+        COLLECTION="medium"
+    else
+        COLLECTION="$1"
+    fi
+    ansible-playbook main.yml --extra-vars "package_collection=${COLLECTION}" -i inventory/hosts
 }

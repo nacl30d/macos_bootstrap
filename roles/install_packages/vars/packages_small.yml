@@ -18,6 +18,7 @@ homebrew:
     - mackup
     - nmap
     - gnu-sed
+    - poppler
     - source-highlight
     - tidy-html5
     - tmux
@@ -25,61 +26,23 @@ homebrew:
     - wget
     - zsh
     - zsh-completions
-    # - sonar-scanner
-    # - python
-    # - node
-    # - r
-    # - jq
-    # - htop
-    # - httrack
-    # - poppler
-    # - unar
-    # - figlet
-    # - cmatrix
-    # - sl
 
   casks:
     - alfred
     - clipy
     - dropbox
-    - docker
-    - firefox
-    - fujitsu-scansnap-home
     - google-chrome
     - google-japanese-ime
     - iterm2
     - font-myrica
     - font-fira-code
-    - visual-studio-code
-    - appcleaner
-    - authy
     - font-source-han-sans
     - font-source-han-serif
+    - appcleaner
+    - authy
     - macx-youtube-downloader
-    - propresenter
     - slack
     - soundflower
-    - tripmode
-    - vipriser
-    - webex-meetings
-    - zoomus
-    # - atom
-    # - sublime-text
-    # - postman
-    # - sourcetree
-    # - virtualbox
-    # - remember-the-milk
-    # - gyazo
-    # - deckset
-    # - grammarly
-    # - duet
-    # - tableau
-    # - astah-professional
-    # - gimp
-    # - inkscape
-    # - macx-dvd-ripper-pro
-    # - macx-video-converter-pro
-    # - xquartz
 
 apps:
   - name: 1Password 7
@@ -102,6 +65,8 @@ apps:
     id: "777233759"
   - name: Total Video Converter Pro
     id: "426654691"
+  - name: ToyViewer
+    id: "414298354"
   - name: Instapaper
     id: "1481302432"
   - name: LadioCast
@@ -122,17 +87,3 @@ apps:
     id: "409201541"
   - name: Numbers
     id: "409203825"
-  - name: Final Cut Pro X
-    id: "424389933"
-  - name: Motion
-    id: "434290957"
-  - name: Compressor
-    id: "424390742"
-  - name: Logic Pro X
-    id: "634148309"
-  # - name: Grammarly for Safari
-  #   id: "1462114288"
-  # - name: ToyViewer
-  #   id: "414298354"
-  # - name: Xcode
-  #   id: 497799835
