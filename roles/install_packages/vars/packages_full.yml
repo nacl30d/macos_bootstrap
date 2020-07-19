@@ -59,6 +59,8 @@ homebrew:
     - vipriser
     - webex-meetings
     - zoomus
+    - obs
+    - obs-virtualcam
     # - virtualbox
     # - astah-professional
     # - gimp
