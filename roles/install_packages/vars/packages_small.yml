@@ -10,6 +10,7 @@ homebrew:
     - curl
     - coreutils
     - emacs
+    - findutils
     - gcc
     - git
     - grep
