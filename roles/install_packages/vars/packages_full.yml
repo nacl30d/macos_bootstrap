@@ -39,6 +39,7 @@ homebrew:
     - docker
     - firefox
     - fujitsu-scansnap-home
+    - google-analytics-opt-out
     - google-chat
     - google-chrome
     - google-japanese-ime
