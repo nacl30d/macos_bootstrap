@@ -35,12 +35,12 @@
         name: "{{ homebrew.repos.official }}"
         state: present
 
-    - name: Be sure homemade repositories are tapped
-      homebrew_tap:
-        name: "{{ item.name }}"
-        url: "{{ item.url }}"
-        state: present
-      loop: "{{ homebrew.repos.homemade }}"
+    # - name: Be sure homemade repositories are tapped
+    #   homebrew_tap:
+    #     name: "{{ item.name }}"
+    #     url: "{{ item.url }}"
+    #     state: present
+    #   loop: "{{ homebrew.repos.homemade }}"
 
 
   - name: Be sure homebrew is updated

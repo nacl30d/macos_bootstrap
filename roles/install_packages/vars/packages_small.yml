@@ -1,9 +1,9 @@
 homebrew:
   repos:
     official: 'homebrew/core,homebrew/services,homebrew/cask,homebrew/cask-fonts,homebrew/cask-drivers,wess/repo'
-    homemade:
-      - name: 'd-salt/homebrew'
-        url: 'https://github.com/d-salt/homebrew-mycasks'
+    # homemade:
+    #   - name: 'd-salt/homebrew'
+    #     url: 'https://github.com/d-salt/homebrew-mycasks'
 
   packages:
     - cmake
