@@ -54,6 +54,7 @@ homebrew:
     - macx-youtube-downloader
     - propresenter
     - slack
+    - syncroom
     - soundflower
     - tripmode
     - vipriser
