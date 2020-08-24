@@ -46,6 +46,10 @@ homebrew:
     - jamulus
     - font-myrica
     - font-fira-code
+    - font-forum
+    - font-mplus
+    - font-noto-sans-cjk-jp
+    - font-noto-serif-cjk-jp
     - font-source-han-sans
     - font-source-han-serif
     - visual-studio-code
