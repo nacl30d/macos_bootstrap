@@ -1,0 +1,22 @@
+---
+- name: Be sure npm is installed
+  block:
+  - name: Check whether npm is installed
+    command: type npm
+    register: npm_status
+    failed_when: npm_status.rc not in [0, 1]
+    changed_when: false
+    check_mode: no
+
+  - name: Run npm install script
+    command: brew install node
+    when: npm_status.rc > 0
+
+- name: Packages from npm repositories
+  block:
+  - name: Be sure npm packages are installed
+    npm:
+      name: "{{ item }}"
+      global: yes
+      state: present
+    loop: "{{ npm.packages }}"

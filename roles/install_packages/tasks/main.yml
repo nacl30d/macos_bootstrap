@@ -4,3 +4,5 @@
 
 - include_tasks: brew.yml
 - include_tasks: mas.yml
+- include_tasks: npm.yml
+- include_tasks: gem.yml

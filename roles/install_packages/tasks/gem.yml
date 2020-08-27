@@ -1,0 +1,20 @@
+---
+- name: Be sure gem is installed
+  block:
+  - name: Check whether gem is installed
+    command: type gem
+    register: gem_status
+    failed_when: gem_status.rc not in [0, 1]
+    changed_when: false
+    check_mode: no
+
+- name: Packages from gem repositories
+  block:
+  - name: Be sure gem packages are installed
+    gem:
+      name: "{{ item }}"
+      user_install: no
+      state: present
+    loop: "{{ gem.packages }}"
+    become: yes
+  when: gem_status.rc > 0
