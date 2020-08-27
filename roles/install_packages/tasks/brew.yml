@@ -30,7 +30,7 @@
     block:
     - name: Tap official repositories
       homebrew_tap:
-        name: "{{ homebrew.repos.official }}"
+        name: "{{ homebrew_repos }}"
         state: present
 
     # - name: Be sure homemade repositories are tapped
