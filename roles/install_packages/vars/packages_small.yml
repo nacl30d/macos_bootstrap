@@ -17,6 +17,7 @@ homebrew:
     - hugo
     - mas
     - mackup
+    - node
     - nmap
     - gnu-sed
     - poppler

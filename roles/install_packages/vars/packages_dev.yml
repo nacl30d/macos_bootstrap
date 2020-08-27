@@ -16,6 +16,7 @@ homebrew:
     - grep
     - mas
     - mackup
+    - node
     - nmap
     - gnu-sed
     - source-highlight
