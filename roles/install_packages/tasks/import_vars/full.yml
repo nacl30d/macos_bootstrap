@@ -1,0 +1,14 @@
+---
+- name: Be sure vars for medium is available
+  include_tasks: import_vars/medium.yml
+
+- name: include_vars - full
+  include_vars:
+    dir: full
+
+- name: Be sure vars for full merged with vars for medium
+  set_fact:
+    homebrew:
+      packages: "{{ homebrew.packages + full_packages }}"
+      casks: "{{ homebrew.casks + full_casks }}"
+    apps: "{{ apps + full_apps }}"

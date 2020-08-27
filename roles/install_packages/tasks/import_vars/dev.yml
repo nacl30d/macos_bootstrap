@@ -1,0 +1,11 @@
+- name: include_vars - dev
+  include_vars:
+    dir: dev
+
+- name: Be sure vars for dev is available
+  set_fact:
+    homebrew:
+      packages: "{{ dev_packages }}"
+      casks: "{{ dev_casks }}"
+    apps: "{{ dev_apps }}"
+

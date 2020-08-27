@@ -1,0 +1,14 @@
+---
+- name: Be sure vars for dev is available
+  include_tasks: import_vars/dev.yml
+
+- name: include_vars - small
+  include_vars:
+    dir: small
+
+- name: Be sure vars for small merged with vars for dev
+  set_fact:
+    homebrew:
+      packages: "{{ homebrew.packages + small_packages }}"
+      casks: "{{ homebrew.casks + small_casks }}"
+    apps: "{{ apps + small_apps }}"

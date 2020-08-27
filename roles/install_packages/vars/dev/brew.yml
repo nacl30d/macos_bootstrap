@@ -1,0 +1,39 @@
+dev_packages:
+  - cmake
+  - curl
+  - coreutils
+  - emacs
+  - findutils
+  - gcc
+  - git
+  - grep
+  - mas
+  - mackup
+  - node
+  - nmap
+  - gnu-sed
+  - source-highlight
+  - tidy-html5
+  - tmux
+  - tree
+  - wget
+  - zsh
+  - zsh-completions
+
+dev_casks:
+  - alfred
+  - clipy
+  - docker
+  - firefox
+  - google-analytics-opt-out
+  - google-chrome
+  - google-japanese-ime
+  - gyazo
+  - iterm2
+  - font-myrica
+  - font-fira-code
+  - font-source-han-sans
+  - font-source-han-serif
+  - visual-studio-code
+  - appcleaner
+  - slack

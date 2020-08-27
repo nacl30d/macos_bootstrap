@@ -1,0 +1,11 @@
+small_packages:
+  - hugo
+  - poppler
+
+small_casks:
+  - authy
+  - dropbox
+  - macx-youtube-downloader
+  - soundflower
+  - tripmode
+  - vipriser

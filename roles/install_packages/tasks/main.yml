@@ -1,5 +1,6 @@
 ---
-- include_vars: "{{ 'packages_' + package_collection + '.yml' }}"
+- include_vars: core.yml
+- include_tasks: "{{ 'import_vars/' + package_collection + '.yml' }}"
 
 - include_tasks: brew.yml
 - include_tasks: mas.yml

@@ -1,0 +1,23 @@
+dev_apps:
+  - name: 1Password 7
+    id: "1333542190"
+  - name: CotEditor
+    id: "1024640650"
+  - name: Magnet
+    id: "441258766"
+  - name: The Unarchiver
+    id: "425424353"
+  - name: WinArchiver Lite
+    id: "414855915"
+  - name: Amphetamine
+    id: "937984704"
+  - name: Focus
+    id: "777233759"
+  - name: Instapaper
+    id: "1481302432"
+  - name: Day One
+    id: "1055511498"
+  - name: OneLogin for Safari
+    id: "1475824389"
+  # - name: Xcode
+  #   id: 497799835

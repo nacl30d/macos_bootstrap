@@ -1,0 +1,17 @@
+medium_packages:
+  - figlet
+
+medium_casks:
+  - deepl
+  - fujitsu-scansnap-home
+  - font-forum
+  - font-mplus
+  - font-noto-sans-cjk-jp
+  - font-noto-serif-cjk-jp
+  - google-chat
+  - grammarly
+  - jamulus
+  - propresenter
+  - syncroom
+  - webex-meetings
+  - zoomus
