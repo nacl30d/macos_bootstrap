@@ -1,0 +1,25 @@
+---
+- name: Applications from Mac App Store
+  block:
+  - name: Be sure mas is installed
+    homebrew:
+      name: mas
+      state: present
+
+  - name: Get account info
+    command: mas account
+    register: mas_account
+    failed_when: mas_account.rc >= 1
+    changed_when: no
+    check_mode: no
+
+  - name: Fetch list
+    command: mas list
+    register: mas_list
+    changed_when: no
+    check_mode: no
+
+  - name: Be sure MacApps are installed
+    command: mas install "{{ item.id }}"
+    when: "mas_list.stdout_lines | select('search', item.id) | list | length == 0"
+    loop: "{{ apps }}"
