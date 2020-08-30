@@ -1,3 +1,5 @@
 npm:
   packages:
     - semistandard
+    - stylelint
+    - jsonlint
