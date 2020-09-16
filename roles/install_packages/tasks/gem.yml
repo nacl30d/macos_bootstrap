@@ -17,4 +17,5 @@
       state: present
     loop: "{{ gem.packages }}"
     become: yes
-  when: gem_status.rc > 0
+  when: gem_status.rc == 0
+  become: yes
