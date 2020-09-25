@@ -1,0 +1,15 @@
+- name: include_vars - corporate
+  include_vars:
+    dir: corporate
+
+- name: Be sure vars for dev is available
+  set_fact:
+    homebrew:
+      packages: "{{ corp_packages }}"
+      casks: "{{ corp_casks }}"
+    apps: []
+    npm:
+      packages: []
+    gem:
+      packages: []
+
