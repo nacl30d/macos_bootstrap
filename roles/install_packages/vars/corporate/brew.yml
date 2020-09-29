@@ -23,7 +23,9 @@ corp_packages:
 corp_casks:
   - alfred
   - authy
+  - appcleaner
   - clipy
+  - discord
   - docker
   - dropbox
   - firefox
@@ -32,10 +34,10 @@ corp_casks:
   - google-japanese-ime
   - gyazo
   - iterm2
+  - notion
+  - slack
   - font-myrica
   - font-fira-code
   - font-source-han-sans
   - font-source-han-serif
   - visual-studio-code
-  - appcleaner
-  - slack
