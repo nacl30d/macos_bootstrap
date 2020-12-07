@@ -23,6 +23,7 @@ dev_packages:
 
 dev_casks:
   - alfred
+  - boost-note
   - clipy
   - docker
   - firefox
