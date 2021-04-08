@@ -1,3 +1,5 @@
+- name: Be sure osx preference loaded
+  include_vars: preferences.yml
 - name: Be sure osx defaults are configured
   osx_defaults:
     domain: "{{ item.0 }}"
