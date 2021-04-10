@@ -12,6 +12,8 @@ corp_packages:
   - node
   - nmap
   - gnu-sed
+  - phpstan
+  - php-code-sniffer
   - source-highlight
   - tidy-html5
   - tmux
