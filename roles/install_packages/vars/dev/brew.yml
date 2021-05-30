@@ -27,6 +27,7 @@ dev_casks:
   - clipy
   - caldigit-thunderbolt-charging
   - docker
+  - dash
   - firefox
   - google-analytics-opt-out
   - google-chrome
