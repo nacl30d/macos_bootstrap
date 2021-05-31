@@ -2,6 +2,7 @@ dev_packages:
   - cmake
   - curl
   - coreutils
+  - diffutils
   - emacs
   - findutils
   - gcc
@@ -22,8 +23,11 @@ dev_packages:
 
 dev_casks:
   - alfred
+  - boost-note
   - clipy
+  - caldigit-thunderbolt-charging
   - docker
+  - dash
   - firefox
   - google-analytics-opt-out
   - google-chrome
