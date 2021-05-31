@@ -33,6 +33,7 @@ corp_casks:
   - google-chrome
   - google-japanese-ime
   - gyazo
+  - insomnia
   - iterm2
   - font-myrica
   - font-fira-code
