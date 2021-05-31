@@ -7,7 +7,7 @@
     homebrew:
       packages: "{{ corp_packages }}"
       casks: "{{ corp_casks }}"
-    apps: []
+    apps: "{{ corporate_apps }}"
     npm:
       packages: []
     gem:
