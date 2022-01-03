@@ -23,7 +23,6 @@ dev_packages:
 
 dev_casks:
   - alfred
-  - boost-note
   - clipy
   - caldigit-thunderbolt-charging
   - docker
@@ -33,11 +32,13 @@ dev_casks:
   - google-chrome
   - google-japanese-ime
   - gyazo
+  - insomnia
   - iterm2
   - font-myrica
   - font-fira-code
   - font-source-han-sans
   - font-source-han-serif
+  - notion
   - visual-studio-code
   - appcleaner
   - slack

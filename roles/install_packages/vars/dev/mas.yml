@@ -15,9 +15,7 @@ dev_apps:
     id: "777233759"
   - name: Instapaper
     id: "1481302432"
-  - name: Day One
-    id: "1055511498"
-  - name: OneLogin for Safari
-    id: "1475824389"
+  - name: Wireguard
+    id: "1451685025"
   # - name: Xcode
   #   id: 497799835

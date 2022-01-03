@@ -3,15 +3,14 @@ medium_packages:
 
 medium_casks:
   - deepl
+  - figma
   - fujitsu-scansnap-home
   - font-forum
   - font-mplus
   - font-noto-sans-cjk-jp
   - font-noto-serif-cjk-jp
-  - google-chat
+  - google-drive
   - grammarly
-  - jamulus
-  - propresenter
-  - syncroom
-  - webex-meetings
+  - obs
+  - typora
   - zoomus

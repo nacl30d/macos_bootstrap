@@ -5,7 +5,6 @@ full_packages:
   - sl
 
 full_casks:
-  - astah-professional
   - gimp
   - inkscape
   # - macx-dvd-ripper-pro

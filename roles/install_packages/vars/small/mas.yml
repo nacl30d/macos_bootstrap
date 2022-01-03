@@ -9,12 +9,12 @@ small_apps:
     id: "414298354"
   - name: LadioCast
     id: "411213048"
-  - name: Microsoft PowerPoint
-    id: "462062816"
-  - name: Microsoft Word
-    id: "462054704"
-  - name: Microsoft Excel
-    id: "462058435"
+  # - name: Microsoft PowerPoint
+  #   id: "462062816"
+  # - name: Microsoft Word
+  #   id: "462054704"
+  # - name: Microsoft Excel
+  #   id: "462058435"
   - name: Keynote
     id: "409183694"
   - name: Pages
