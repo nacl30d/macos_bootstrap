@@ -7,7 +7,7 @@ medium_apps:
     id: "1055511498"
   - name: Notion Web Clipper
     id: "1559269364"
-  - name: Sorted 3
-    id: "1306893526"
-  - name: Trello
-    id: "1278508951"
+  # - name: Sorted 3
+  #   id: "1306893526"
+  # - name: Trello
+  #   id: "1278508951"
