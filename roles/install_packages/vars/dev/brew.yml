@@ -22,6 +22,7 @@ dev_packages:
   - zsh-completions
 
 dev_casks:
+  - 1password
   - alfred
   - clipy
   - caldigit-thunderbolt-charging
