@@ -1,0 +1,22 @@
+---
+- name: Be sure pip is installed
+  block:
+  - name: Check whether pip is installed
+    command: type pip3
+    register: pip_status
+    failed_when: pip_status.rc not in [0, 1]
+    chenged_when: false
+    check_mode: no
+
+  - name: Run pip install script
+    command:
+    when: pip_status.rc > 0
+
+- name: Packages from pip repositories
+  block:
+  - name: Be sure pip packages are installed
+    pip:
+      name: "{{ item }}"
+      global: yes
+      state: present
+    loop: "{{ pip.packages }}"
