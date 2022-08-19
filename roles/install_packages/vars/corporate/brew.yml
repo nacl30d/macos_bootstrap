@@ -26,21 +26,30 @@ corp_casks:
   - alfred
   - authy
   - appcleaner
+  - caldigit-thunderbolt-charging
   - clipy
   - discord
+  - drawio
   - docker
-  - dropbox
+  - figma
   - firefox
+  - gitify
   - google-analytics-opt-out
   - google-chrome
+  - google-drive
   - google-japanese-ime
-  - gyazo
   - insomnia
   - iterm2
+  - kindle
   - notion
+  - monitorcontrol
+  - mysqlworkbench
   - slack
+  - stay
   - font-myrica
   - font-fira-code
   - font-source-han-sans
   - font-source-han-serif
+  - yubico-authenticator
+  - yubico-yubikey-manager
   - visual-studio-code
