@@ -27,7 +27,7 @@ preferences:
     - key: com.apple.trackpad.scaling
       type: int
       value: 2
-      
+
   - domain: "com.apple.AppleMultitouchTrackpad"
     configures:
     - key: Clicking
@@ -124,7 +124,7 @@ preferences:
       type: bool
       value: yes
 
-  #@ couldnot find on catalina 
+  # couldnot find on catalina
   # - domain: "com.apple.safari"
   #   configures:
   #   - key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
@@ -169,7 +169,7 @@ preferences:
     configures:
     - key: DateFormat
       type: string
-      value: "EEE MMM D  H:mm"
+      value: "EEE MMM D H:mm"
     - key: FlashDateSeparators
       type: bool
       value: no
@@ -182,9 +182,3 @@ preferences:
     - key: visible
       type: bool
       value: yes
-
-  - domain: com.apple.repport
-    configures:
-    - key: familySyncedName
-      type: string
-      value: "SaltBook Pro"
