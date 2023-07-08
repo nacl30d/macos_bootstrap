@@ -1,5 +1,0 @@
-gem:
-  packages:
-    - commonmarker
-    - github-markup
-    - mdl

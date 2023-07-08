@@ -1,4 +1,7 @@
 ---
+- name: Be sure variables are loaded
+  include_vars: brew.yaml
+
 - name: Be sure brew is installed
   block:
   - name: Check whether brew is installed
@@ -30,7 +33,7 @@
     block:
     - name: Tap official repositories
       homebrew_tap:
-        name: "{{ homebrew_repos }}"
+        name: "{{ taps }}"
         state: present
 
     # - name: Be sure homemade repositories are tapped
@@ -46,9 +49,9 @@
       update_homebrew: yes
 
 
-  - name: Be sure homebrew packages are installed
+  - name: Be sure homebrew formulas are installed
     homebrew:
-      name: "{{ homebrew.packages }}"
+      name: "{{ homebrew.formulas }}"
       state: present
 
 
@@ -58,5 +61,5 @@
       state: present
       install_options: "appdir=/Applications"
       accept_external_apps: yes
-    loop: "{{ homebrew.casks }}"
+    loop: "{{ casks }}"
     ignore_errors: yes

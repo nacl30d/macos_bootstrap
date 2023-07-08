@@ -1,4 +1,7 @@
 ---
+- name: Be sure variables are loaded
+  incluce_vars: mas.yaml
+
 - name: Applications from Mac App Store
   block:
   - name: Be sure mas is installed

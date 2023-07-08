@@ -45,10 +45,5 @@ GIT_DIR="${HOME}/.macos_bootstrap"
 
 : "Run Ansible Palybook" && {
     cd ${GIT_DIR}
-    if [ "$1" = "" ]; then
-        COLLECTION="medium"
-    else
-        COLLECTION="$1"
-    fi
-    ansible-playbook main.yml --extra-vars "package_collection=${COLLECTION}" -i inventory/hosts
+    ansible-playbook main.yml -i inventory/hosts
 }

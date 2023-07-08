@@ -1,0 +1,59 @@
+taps: 'homebrew/cask-fonts,homebrew/cask-drivers'
+
+formulas:
+  - cmake
+  - coreutils
+  - curl
+  - diffutils
+  - emacs
+  - figlet
+  - findutils
+  - fzf
+  - gcc
+  - gh
+  - git
+  - gnu-sed
+  - grep
+  - mas
+  - mackup
+  - nodeenv
+  - openssh
+  - poppler
+  - source-highlight
+  - starship
+  - tidy-html5
+  - tmux
+  - tree
+  - wget
+  - zsh
+  - zsh-completions
+
+casks:
+  - 1password
+  - alfred
+  - appcleaner
+  - caldigit-thunderbolt-charging
+  - docker
+  - dropbox
+  - figma
+  - firefox
+  - font-fira-code
+  - font-fira-code-nerd-font
+  - fujitsu-scansnap-home
+  - google-analytics-opt-out
+  - google-chrome
+  - google-drive
+  - google-japanese-ime
+  - gpg-suite
+  - insomnia
+  - iterm2
+  - keybase
+  - maccy
+  - notion
+  - orbstack
+  - slack
+  - soundflower
+  - yubico-authenticator
+  - yubico-yubikey-manager
+  - visual-studio-code
+  - zoom
