@@ -28,9 +28,9 @@ GIT_DIR="${HOME}/.macos_bootstrap"
 
 : "Download Ansible Playbooks" && {
     if type git > /dev/null 2>&1; then
-        if -d ${GIT_DIR}; then
+        if [ -d ${GIT_DIR} ]; then
             cd ${GIT_DIR}
-            git pull
+            git pull --no-ff
         else
             git clone ${GIT_REPO}.git ${GIT_DIR}
         fi

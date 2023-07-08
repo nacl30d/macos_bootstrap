@@ -51,7 +51,7 @@
 
   - name: Be sure homebrew formulas are installed
     homebrew:
-      name: "{{ homebrew.formulas }}"
+      name: "{{ formulas }}"
       state: present
 
 
