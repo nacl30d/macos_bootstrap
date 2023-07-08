@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-GIT_REPO="https://github.com/d-salt/macos_bootstrap"
+GIT_REPO="https://github.com/nacl30d/macos_bootstrap"
 GIT_DIR="${HOME}/.macos_bootstrap"
 
 : "Install ansible" && {

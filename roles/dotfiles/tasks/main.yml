@@ -1,6 +1,6 @@
 - name: Checkout my dotfiles
   git:
-    repo: https://github.com/d-salt/dotfiles.git
+    repo: https://github.com/nacl30d/dotfiles.git
     dest: ~/.dotfiles
 
 - name: Get dotfiles
