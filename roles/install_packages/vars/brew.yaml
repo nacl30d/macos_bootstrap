@@ -1,4 +1,4 @@
-taps: 'homebrew/cask-fonts,homebrew/cask-drivers'
+taps: 'homebrew/cask-fonts'
 
 formulas:
   - cmake
