@@ -9,12 +9,12 @@
       name: mas
       state: present
 
-  - name: Get account info
-    command: mas account
-    register: mas_account
-    failed_when: mas_account.rc >= 1
-    changed_when: no
-    check_mode: no
+#  - name: Get account info
+#    command: mas account
+#    register: mas_account
+#    failed_when: mas_account.rc >= 1
+#    changed_when: no
+#    check_mode: no
 
   - name: Fetch list
     command: mas list
