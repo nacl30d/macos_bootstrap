@@ -1,7 +1,11 @@
 taps: 'homebrew/cask-fonts'
 
 formulas:
+  - actionlint
+  - aspell
+  - awscli
   - cmake
+  - composer
   - coreutils
   - curl
   - diffutils
@@ -18,6 +22,8 @@ formulas:
   - mackup
   - nodenv
   - openssh
+  - saml2aws
+  - php
   - poppler
   - source-highlight
   - starship
