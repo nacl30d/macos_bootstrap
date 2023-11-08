@@ -37,9 +37,9 @@ formulas:
 casks:
   - 1password
   - alfred
+  - arc
   - appcleaner
   - caldigit-thunderbolt-charging
-  - docker
   - dropbox
   - figma
   - firefox
@@ -59,8 +59,7 @@ casks:
   - notion
   - orbstack
   - slack
-  - soundflower
+  - visual-studio-code
   - yubico-authenticator
   - yubico-yubikey-manager
-  - visual-studio-code
   - zoom
