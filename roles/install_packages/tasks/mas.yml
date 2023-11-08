@@ -26,3 +26,4 @@
     command: mas install "{{ item.id }}"
     when: "mas_list.stdout_lines | select('search', item.id) | list | length == 0"
     loop: "{{ apps }}"
+    ignore_errors: yes
