@@ -2,50 +2,59 @@ taps: 'homebrew/cask-fonts'
 
 formulas:
   - actionlint
+  - aws-vault
   - aspell
   - awscli
   - cmake
   - composer
   - coreutils
   - curl
+  - difftastic
   - diffutils
   - emacs
   - figlet
   - findutils
   - fzf
+  - gawk
   - gcc
   - gh
   - git
   - gnu-sed
   - grep
-  - mas
+  - jq
   - mackup
+  - mas
+  - make
   - nodenv
   - openssh
   - saml2aws
   - php
   - poppler
+  - saml2aws
   - source-highlight
   - starship
-  - tidy-html5
   - tmux
   - tree
+  - unzip
   - wget
+  - ykman
   - zsh
   - zsh-completions
 
 casks:
   - 1password
   - alfred
-  - arc
   - appcleaner
+  - blackhole-64ch
   - caldigit-thunderbolt-charging
   - dropbox
+  - drawio
   - figma
   - firefox
   - font-fira-code
   - font-fira-code-nerd-font
   - fujitsu-scansnap-home
+  - ghostty
   - gitify
   - google-analytics-opt-out
   - google-chrome
@@ -53,7 +62,6 @@ casks:
   - google-japanese-ime
   - gpg-suite
   - insomnia
-  - iterm2
   - keybase
   - maccy
   - notion
