@@ -22,7 +22,6 @@ formulas:
   - gnu-sed
   - grep
   - jq
-  - mackup
   - mas
   - make
   - nodenv
