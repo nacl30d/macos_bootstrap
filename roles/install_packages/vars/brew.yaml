@@ -2,9 +2,10 @@ taps: 'homebrew/cask-fonts'
 
 formulas:
   - actionlint
-  - aws-vault
+  - asdf
   - aspell
   - awscli
+  - aws-vault
   - cmake
   - composer
   - coreutils
