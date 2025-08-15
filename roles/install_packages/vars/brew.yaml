@@ -2,7 +2,6 @@ taps: 'homebrew/cask-fonts'
 
 formulas:
   - actionlint
-  - asdf
   - aspell
   - awscli
   - aws-vault
@@ -25,7 +24,7 @@ formulas:
   - jq
   - mas
   - make
-  - nodenv
+  - mise
   - openssh
   - saml2aws
   - php
