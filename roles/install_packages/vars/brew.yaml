@@ -1,4 +1,4 @@
-taps: 'homebrew/cask-fonts'
+taps: ''
 
 formulas:
   - actionlint
@@ -68,5 +68,4 @@ casks:
   - slack
   - visual-studio-code
   - yubico-authenticator
-  - yubico-yubikey-manager
   - zoom
