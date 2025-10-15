@@ -1,0 +1,11 @@
+formulas:
+  - composer
+  - php
+  - poppler
+
+casks:
+  - 1password
+  - blackhole-64ch
+  - caldigit-thunderbolt-charging
+  - dropbox
+  - fujitsu-scansnap-home

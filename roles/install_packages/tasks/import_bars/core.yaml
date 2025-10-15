@@ -1,0 +1,10 @@
+- name: include_vars - core
+  include_vars:
+    dir: core
+
+- name: Be sure core variables are available
+  set_fact:
+    homebrew:
+      packages: "{{ core_packages }}"
+      casks: "{{ dev_casks }}"
+    apps: "{{ core_apps }}"

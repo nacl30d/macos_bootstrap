@@ -25,11 +25,11 @@ apps:
     id: "409201541"
   - name: Numbers
     id: "409203825"
-  # - name: Microsoft PowerPoint
-  #   id: "462062816"
-  # - name: Microsoft Word
-  #   id: "462054704"
-  # - name: Microsoft Excel
-  #   id: "462058435"
-  # - name: Xcode
-  #   id: 497799835
+  - name: Microsoft PowerPoint
+    id: "462062816"
+  - name: Microsoft Word
+    id: "462054704"
+  - name: Microsoft Excel
+    id: "462058435"
+  - name: Xcode
+    id: "497799835"

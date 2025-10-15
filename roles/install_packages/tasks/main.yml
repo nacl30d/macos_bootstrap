@@ -1,3 +1,10 @@
 ---
+- include_vars:
+    dir: core
+
+- include_vars:
+    dir: optional
+  when: with_optional is defined
+
 - include_tasks: brew.yml
 - include_tasks: mas.yml

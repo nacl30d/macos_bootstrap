@@ -1,7 +1,4 @@
 ---
-- name: Be sure variables are loaded
-  include_vars: brew.yaml
-
 - name: Be sure brew is installed
   block:
   - name: Check whether brew is installed
@@ -11,55 +8,30 @@
     changed_when: false
     check_mode: no
 
-  # - name: Be sure brew prerequirements are installed
-  #   block:
-  #     - name: Check whether xcode-select is installed
-  #       command: type xcode-select
-  #       register: xcode_status
-  #       failed_when: xcode_status.rc not in [0, 1 not found]
-  #       changed_when: false
+- name: Be sure brew prerequirements are installed
+  shell: xcode-select --install 2>&1 | grep -q "already installed"
 
-  #     - name: Install xcode-select
-  #       command: xcode-select --install
-  #       when: xcode_status.rc > 0
-
-  - name: Run brew install script
-    shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    when: brew_status.rc > 0
-
-- name: Applications from homebrew repositories
-  block:
-  - name: Be sure repositories are tapped
-    block:
-    - name: Tap official repositories
-      homebrew_tap:
-        name: "{{ taps }}"
-        state: present
-
-    # - name: Be sure homemade repositories are tapped
-    #   homebrew_tap:
-    #     name: "{{ item.name }}"
-    #     url: "{{ item.url }}"
-    #     state: present
-    #   loop: "{{ homebrew.repos.homemade }}"
+- name: Run brew install script
+  shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  when: brew_status.rc > 0
 
 
-  - name: Be sure homebrew is updated
-    homebrew:
-      update_homebrew: yes
+- name: Be sure homebrew is updated
+  homebrew:
+    update_homebrew: yes
 
 
-  - name: Be sure homebrew formulas are installed
-    homebrew:
-      name: "{{ formulas }}"
-      state: present
+- name: Be sure homebrew formulas are installed
+  homebrew:
+    name: "{{ formulas }}"
+    state: present
 
 
-  - name: Be sure homebrew casks are installed
-    homebrew_cask:
-      name: "{{ item }}"
-      state: present
-      install_options: "appdir=/Applications"
-      accept_external_apps: yes
-    loop: "{{ casks }}"
-    ignore_errors: yes
+- name: Be sure homebrew casks are installed
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    install_options: "appdir=/Applications"
+    accept_external_apps: yes
+  loop: "{{ casks }}"
+  ignore_errors: yes
