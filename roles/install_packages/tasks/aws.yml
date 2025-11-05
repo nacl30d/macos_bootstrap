@@ -1,0 +1,43 @@
+---
+- name: Check whether session-manager-plugin is installed
+  command: type session-manager-plugin
+  register: session_manager_plugin_status
+  failed_when: session_manager_plugin_status.rc not in [0, 1]
+  changed_when: false
+  check_mode: no
+
+- name: Be sure aws-session-manager is installed
+  when: session_manager_plugin_status.rc > 0
+  block:
+  - name: Be sure temporary working directory exists
+    tempfile:
+      state: directory
+    register: tmpdir
+
+  - name: Determine os_architecture
+    set_fact:
+      os_architecture: "{{ (ansible_architecture == 'arm64') | ternary('mac_arm64', 'mac') }}"
+
+  - name: Be sure install package exists
+    get_url:
+      url: "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/{{ os_architecture }}/session-manager-plugin.pkg"
+      dest: "{{ tmpdir.path }}/session-manager-plugin.pkg"
+
+  - name: Be sure target directory exists
+    file:
+      path: /usr/local/bin
+      state: directory
+
+  - name: Be sure aws-session-manager is installed
+    block:
+    - command: "sudo installer -pkg {{ tmpdir.path }}/session-manager-plugin.pkg -target /"
+    - file:
+        src: /usr/local/sessionmanagerplugin/bin/session-manager-plugin
+        dest: /usr/local/bin/session-manager-plugin
+        state: link
+
+  - name: Be sure temporary working directory absents
+    file:
+      path: "{{ tmpdir.path }}"
+      state: absent
+    when: tmpdir.path is defined
