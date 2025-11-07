@@ -2,10 +2,14 @@ formulas:
   - composer
   - php
   - poppler
+  - jetbrains/utils/kotlin-lsp
 
 casks:
   - 1password
+  - android-studio
   - blackhole-64ch
   - caldigit-thunderbolt-charging
   - dropbox
   - fujitsu-scansnap-home
+  - openvpn-connect
+  - rectangle

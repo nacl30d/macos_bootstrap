@@ -3,6 +3,7 @@ formulas:
   - aspell
   - awscli
   - aws-vault
+  - bash
   - cmake
   - coreutils
   - curl
