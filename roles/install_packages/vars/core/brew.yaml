@@ -1,15 +1,13 @@
 formulas:
-  - actionlint
-  - aspell
-  - awscli
-  - aws-vault
   - bash
   - cmake
+  - cmark-gfm
   - coreutils
   - curl
   - difftastic
   - diffutils
   - emacs
+  - enchant
   - figlet
   - findutils
   - fzf
@@ -19,11 +17,11 @@ formulas:
   - git
   - gnu-sed
   - grep
-  - jq
   - mas
   - make
   - mise
   - openssh
+  - pkgconf
   - source-highlight
   - starship
   - tmux
@@ -31,8 +29,6 @@ formulas:
   - unzip
   - wget
   - ykman
-  - zsh
-  - zsh-completions
 
 casks:
   - alfred
@@ -46,11 +42,9 @@ casks:
   - google-chrome
   - google-drive
   - google-japanese-ime
-  - gpg-suite
-  - insomnia
+  - gpg-suite-no-mail
   - keybase
   - maccy
-  - notion
   - orbstack
   - slack
   - yubico-authenticator

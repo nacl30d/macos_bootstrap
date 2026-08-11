@@ -1,15 +1,20 @@
 formulas:
-  - composer
-  - php
-  - poppler
+  - docker
+  - docker-buildx
+  - docker-compose
   - jetbrains/utils/kotlin-lsp
+  - poppler
+  - xcodes
 
 casks:
   - 1password
+  - 1password-cli
   - android-studio
   - blackhole-64ch
+  - brave-browser
   - caldigit-thunderbolt-charging
+  - colima
   - dropbox
   - fujitsu-scansnap-home
-  - openvpn-connect
-  - rectangle
+  - notion
+  - orbstack
