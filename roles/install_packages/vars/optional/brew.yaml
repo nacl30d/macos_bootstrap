@@ -1,4 +1,5 @@
 formulas:
+  - colima
   - docker
   - docker-buildx
   - docker-compose
@@ -13,7 +14,6 @@ casks:
   - blackhole-64ch
   - brave-browser
   - caldigit-thunderbolt-charging
-  - colima
   - dropbox
   - fujitsu-scansnap-home
   - notion
