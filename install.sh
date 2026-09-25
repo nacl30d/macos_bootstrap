@@ -49,6 +49,7 @@ GIT_DIR="${HOME}/.macos_bootstrap"
             exit 1;
         fi
 
+        pip3 install --upgrade pip
         pip3 install ansible
 
         if ! type ansible > /dev/null 2>&1; then
