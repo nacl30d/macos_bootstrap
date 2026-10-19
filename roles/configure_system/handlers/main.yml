@@ -1,0 +1,2 @@
+- name: Restart UI processes
+  command: killall Dock Finder SystemUIServer

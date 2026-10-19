@@ -2,11 +2,13 @@
   include_vars: preferences.yml
 - name: Be sure osx defaults are configured
   osx_defaults:
-    domain: "{{ item.0 }}"
+    domain: "{{ item.0.domain }}"
+    host: "{{ item.0.host | default(omit) }}"
     key: "{{ item.1.key }}"
     type: "{{ item.1.type }}"
     value: "{{ item.1.value }}"
     state: present
+  notify: Restart UI processes
   with_subelements:
     - "{{ preferences }}"
     - configures
