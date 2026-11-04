@@ -1,22 +1,36 @@
-apps:
+extra_formulas:
+  - poppler
+
+extra_casks:
+  - 1password
+  - 1password-cli
+  - blackhole-64ch
+  - brave-browser
+  - caldigit-thunderbolt-charging
+  - dropbox
+  - fujitsu-scansnap-home
+  - notion
+  - orbstack
+
+extra_apps:
   - name: 1Password for Safari
     id: "1569813296"
-  - name: CotEditor
-    id: "1024640650"
+  # - name: CotEditor
+  #   id: "1024640650"
   - name: Magnet
     id: "441258766"
-  - name: The Unarchiver
-    id: "425424353"
+  # - name: The Unarchiver
+  #   id: "425424353"
   - name: Focus
     id: "777233759"
   - name: Wireguard
     id: "1451685025"
   - name: LINE
     id: "539883307"
-  - name: Total Video Converter Pro
-    id: "426654691"
-  - name: ToyViewer
-    id: "414298354"
+  # - name: Total Video Converter Pro
+  #   id: "426654691"
+  # - name: ToyViewer
+  #   id: "414298354"
   - name: LadioCast
     id: "411213048"
   - name: Keynote

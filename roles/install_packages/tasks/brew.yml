@@ -23,7 +23,7 @@
 
 - name: Be sure homebrew formulas are installed
   homebrew:
-    name: "{{ formulas }}"
+    name: "{{ target_formulas }}"
     state: present
 
 
@@ -33,5 +33,5 @@
     state: present
     install_options: "appdir=/Applications"
     accept_external_apps: yes
-  loop: "{{ casks }}"
+  loop: "{{ target_casks }}"
   ignore_errors: yes

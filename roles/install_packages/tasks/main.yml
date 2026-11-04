@@ -1,10 +1,17 @@
 ---
+- name: Be sure install_tier is valid
+  assert:
+    that: install_tier in ['minimum', 'standard']
+    fail_msg: "install_tier must be 'minimum' or 'standard': {{ install_tier }}"
+
 - include_vars:
     dir: core
 
-- include_vars:
-    dir: optional
-  when: with_optional is defined
+- name: Resolve packages for the install tier
+  set_fact:
+    target_formulas: "{{ formulas.minimum + ((formulas.standard + extra_formulas) if install_tier == 'standard' else []) }}"
+    target_casks: "{{ casks.minimum + ((casks.standard + extra_casks) if install_tier == 'standard' else []) }}"
+    target_apps: "{{ apps.minimum + ((apps.standard + extra_apps) if install_tier == 'standard' else []) }}"
 
 - include_tasks: brew.yml
 - include_tasks: mas.yml

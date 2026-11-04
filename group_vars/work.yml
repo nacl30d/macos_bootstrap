@@ -1,0 +1,9 @@
+extra_formulas:
+  - container
+  - xcodes
+
+extra_casks:
+  - android-studio
+  - claude-code
+
+extra_apps: []

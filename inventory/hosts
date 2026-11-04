@@ -1,2 +1,11 @@
-[local]
-127.0.0.1    ansible_python_interpreter=/usr/bin/python3
+base ansible_host=127.0.0.1
+
+[private]
+private ansible_host=127.0.0.1
+
+[work]
+work ansible_host=127.0.0.1
+
+[all:vars]
+ansible_connection=local
+ansible_python_interpreter=/usr/bin/python3

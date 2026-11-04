@@ -2,6 +2,24 @@
 
 GIT_REPO="https://github.com/nacl30d/macos_bootstrap"
 GIT_DIR="${HOME}/.macos_bootstrap"
+TARGET="${1:-minimum}"
+
+: "Check arguments" && {
+    case "${TARGET}" in
+        minimum|standard)
+            HOST=base
+            TIER="${TARGET}"
+            ;;
+        private|work)
+            HOST="${TARGET}"
+            TIER=standard
+            ;;
+        *)
+            echo "Usage: $0 [minimum|standard|private|work]"
+            exit 1;
+            ;;
+    esac
+}
 
 : "Meet pre-requirements" && {
     if ! xcode-select --install 2>&1 | grep -q "already installed"; then
@@ -60,5 +78,5 @@ GIT_DIR="${HOME}/.macos_bootstrap"
 }
 
 : "Run Ansible Palybook" && {
-    ansible-playbook main.yml -i inventory/hosts
+    ansible-playbook main.yml -i inventory/hosts -l "${HOST}" -e install_tier="${TIER}"
 }
