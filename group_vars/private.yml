@@ -8,40 +8,38 @@ extra_casks:
   - brave-browser
   - caldigit-thunderbolt-charging
   - dropbox
-  - fujitsu-scansnap-home
+  - google-drive
+  - keybase
   - notion
   - orbstack
+  - scansnap-home
 
 extra_apps:
   - name: 1Password for Safari
     id: "1569813296"
-  # - name: CotEditor
-  #   id: "1024640650"
   - name: Magnet
     id: "441258766"
-  # - name: The Unarchiver
-  #   id: "425424353"
-  - name: Focus
-    id: "777233759"
   - name: Wireguard
     id: "1451685025"
   - name: LINE
     id: "539883307"
-  # - name: Total Video Converter Pro
-  #   id: "426654691"
-  # - name: ToyViewer
-  #   id: "414298354"
-  - name: LadioCast
-    id: "411213048"
   - name: Keynote
     id: "409183694"
   - name: Pages
     id: "409201541"
   - name: Numbers
     id: "409203825"
-  - name: Microsoft PowerPoint
-    id: "462062816"
-  - name: Microsoft Word
-    id: "462054704"
-  - name: Microsoft Excel
-    id: "462058435"
+  # - name: Microsoft PowerPoint
+  #   id: "462062816"
+  # - name: Microsoft Word
+  #   id: "462054704"
+  # - name: Microsoft Excel
+  #   id: "462058435"
+  # - name: "Logic Pro"
+  #   id: "634148309"
+  # - name: "Final Cut Pro"
+  #   id: "424389933"
+  # - name: "Compressor"
+  #   id: "424390742"
+  - name: "Keepa - Price Tracker"
+    id: "1533805339"
